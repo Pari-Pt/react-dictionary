@@ -6,6 +6,7 @@ export default function App() {
     <div className="App">
       <h1>Dictionary App</h1>
       <DictionarySearch />
+      <small><a href="https://github.com/Seo-Pt/react-dictionary">Open-source code</a> by Seonah Nathali</small>
     </div>
   );
 }
