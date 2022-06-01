@@ -30,8 +30,8 @@ export default function DictionarySearch(){
     return (
         <div className="DictionarySearch">
             <form onSubmit={search}>
-                <input type="search" onChange={handleChanges} className="search-engine" placeholder="Search for a word..." />
-                <input type="submit" className="search-submit-btn" value="🔎Go!" />
+                <input type="search" onChange={handleChanges} className="search-engine rounded" placeholder="Search for a word..." />
+                <input type="submit" className="search-submit-btn rounded ms-2" value="🔎Go!" />
             </form>
             <Results results={results}/>
             

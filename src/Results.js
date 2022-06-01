@@ -8,8 +8,8 @@ export default function Results(props){
         let word = props.results.word;
     return(
         <div className="Results">
-            <h2>{word}</h2>
-            <h3>Definition</h3>
+            <h2>👉 {word}</h2>
+            <h3 className="mb-3">Definition(s)</h3>
             {props.results.meanings.map(function (meanings, index){
                 return ( <div className="meanings" key={index}>
                     <Meanings meanings={meanings} />
