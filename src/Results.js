@@ -10,9 +10,9 @@ export default function Results(props){
         <div className="Results">
             <h2>{word}</h2>
             <h3>Definition</h3>
-            {props.results.meanings.map(function (definitions, index){
-                return ( <div className="definitions" key={index}>
-                    <Meanings data={definitions} />
+            {props.results.meanings.map(function (meanings, index){
+                return ( <div className="meanings" key={index}>
+                    <Meanings meanings={meanings} />
                 </div>)
             })}
 
