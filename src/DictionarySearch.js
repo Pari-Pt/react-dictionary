@@ -6,9 +6,11 @@ import "./DictionarySearch.css";
 export default function DictionarySearch(){
     
     let [keyword, setKeyword] = useState("");
+    let [results, setResults] = useState(null);
 
     function handleResponse(response){
         console.log(response);
+        setResults(response.data[0])
     }
     
     
@@ -31,7 +33,7 @@ export default function DictionarySearch(){
                 <input type="search" onChange={handleChanges} className="search-engine" placeholder="Search for a word..." />
                 <input type="submit" className="search-submit-btn" value="🔎Go!" />
             </form>
-            <Results />
+            <Results results={results}/>
             
         </div>);
 }
