@@ -1,4 +1,5 @@
 import React from "react";
+import "./Results.css";
 
 export default function Results(props){
     console.log(props)
@@ -7,6 +8,7 @@ export default function Results(props){
     return(
         <div className="Results">
             <h2>{word}</h2>
+            <h3>Definition</h3>
         </div>
     );
     } else {
