@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import axios from "axios";
+import Results from "./Results.js";
 import "./DictionarySearch.css";
 
 export default function DictionarySearch(){
@@ -30,6 +31,7 @@ export default function DictionarySearch(){
                 <input type="search" onChange={handleChanges} className="search-engine" placeholder="Search for a word..." />
                 <input type="submit" className="search-submit-btn" value="🔎Go!" />
             </form>
+            <Results />
             
         </div>);
 }
