@@ -3,7 +3,7 @@ import Meanings from "./Meanings.js";
 import "./Results.css";
 
 export default function Results(props){
-    console.log(props)
+    //console.log(props)
     if (props.results) {
         let word = props.results.word;
         let phonetic = props.results.phonetic;
@@ -11,9 +11,9 @@ export default function Results(props){
         <div className="Results">
             <h2>👉 {word}</h2>
             <p>{phonetic}</p>
-            {props.results.meanings.map(function (meanings, index){
+            {props.results.meanings.map(function (meaning, index){
                 return ( <div className="meanings" key={index}>
-                    <Meanings meanings={meanings} />
+                    <Meanings meanings={meaning} />
                 </div>)
             })}
 
