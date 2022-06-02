@@ -1,20 +1,20 @@
 import React from "react";
 
 export default function Synonyms(props){
-    console.log(props);
-    if (props.synonyms.length > 0){
+    if (props.synonyms.length){
         return (
             <div className="Synonyms">
+                <h6>Synonym(s):</h6>
                 {props.synonyms.map(function(synonym, index){
                     return(
                         <span key={index}>
-                        {synonym}
+                         {synonym}&nbsp;
                         </span>
                     )
                 })}
-            </div>
-        )
-    } else {
-        return null;
-    }
+                    </div>
+        );
+                } else {
+                    return null;
+                }
     }

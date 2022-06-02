@@ -15,15 +15,11 @@ console.log(props.meanings.synonyms)
     
     {props.meanings.definitions.map(function(definition, index){
         return(
-            <div className="row" key={index}>
-                <div className="col-lg">
+            <div key={index}>
                 <ul>
                     <li>{definition.definition}</li>
                 </ul>
-                </div>
-                <div className="col-lg">
-                </div>
-            </div>
+                    </div>
             );
         })}
         <Synonyms synonyms={props.meanings.synonyms} />
