@@ -10,6 +10,7 @@ console.log(props.meanings.synonyms)
     <div className="Meanings">
     <div class="card">
     <div class="card-body">
+    
     <h3>{props.meanings.partOfSpeech}</h3>
     <h6>Definition(s):</h6>
     

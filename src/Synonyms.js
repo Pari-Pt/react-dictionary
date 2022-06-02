@@ -7,7 +7,7 @@ export default function Synonyms(props){
                 <h6>Synonym(s):</h6>
                 {props.synonyms.map(function(synonym, index){
                     return(
-                        <span key={index} className="synonym border">{synonym}</span>
+                        <span key={index} className="synonym btn border">{synonym}</span>
                     )
                 })}
                     </div>
