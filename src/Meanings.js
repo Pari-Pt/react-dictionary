@@ -8,8 +8,8 @@ console.log(props)
 console.log(props.meanings.synonyms)
     return (
     <div className="Meanings">
-    <div class="card">
-    <div class="card-body">
+    <div className="card mt-3">
+    <div className="card-body">
     
     <h3>{props.meanings.partOfSpeech}</h3>
     <h6>Definition(s):</h6>
