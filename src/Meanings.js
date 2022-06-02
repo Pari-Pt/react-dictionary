@@ -7,8 +7,12 @@ console.log(props)
 //console.log(props.meanings)
     return (
     <div className="Meanings">
+    <div className="card mb-2">
+    <div className="card-body">
+    <h5 className="card-title">Card title</h5>
     <h3>{props.meanings.partOfSpeech}</h3>
     <h6>Definition(s):</h6>
+    
     {props.meanings.definitions.map(function(definition, index){
         return(
             <div className="definitions" key={index}>
@@ -17,7 +21,9 @@ console.log(props)
                 </ul>
             </div>
         );
-        })}
+    })}
+    </div>
+  </div>
     </div>
     );
 }
