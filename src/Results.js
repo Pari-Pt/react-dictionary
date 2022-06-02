@@ -11,7 +11,6 @@ export default function Results(props){
         <div className="Results">
             <h2>👉 {word}</h2>
             <p>{phonetic}</p>
-            <h3 className="mb-3">Definition(s)</h3>
             {props.results.meanings.map(function (meanings, index){
                 return ( <div className="meanings" key={index}>
                     <Meanings meanings={meanings} />

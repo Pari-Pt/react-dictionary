@@ -7,7 +7,8 @@ console.log(props)
 //console.log(props.meanings)
     return (
     <div className="Meanings">
-    <h4>{props.meanings.partOfSpeech}</h4>
+    <h3>{props.meanings.partOfSpeech}</h3>
+    <h6>Definition(s):</h6>
     {props.meanings.definitions.map(function(definition, index){
         return(
             <div className="definitions" key={index}>
