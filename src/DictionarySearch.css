@@ -1,3 +1,14 @@
 .DictionarySearch form {
     text-align: center;
 }
+
+.DictionarySearch input {
+    line-height: 27px;
+    font-size: 20px;
+}
+
+.DictionarySearch .search-engine {
+    box-shadow: 0px 5px 15px rgba(105, 95, 95, 0.2);
+    width: 45%;
+
+}

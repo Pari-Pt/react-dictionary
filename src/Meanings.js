@@ -11,7 +11,7 @@ console.log(props.meanings.synonyms)
     <div className="card mt-3">
     <div className="card-body">
     
-    <h3>{props.meanings.partOfSpeech}</h3>
+    <h3>[{props.meanings.partOfSpeech}]</h3>
     <h6>Definition(s):</h6>
     
     {props.meanings.definitions.map(function(definition, index){

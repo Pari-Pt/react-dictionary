@@ -9,7 +9,7 @@ export default function Results(props){
         let word = props.results.word;
     return(
         <div className="Results">
-            <h2>🔎{word}</h2>
+            <h2>📖{word}</h2>
             <span><Phonetics phoneticAudio={props.results.phonetics[0]} phoneticText={props.results.phonetic} /></span>
             {props.results.meanings.map(function (meaning, index){
                 return ( <div className="meanings" key={index}>
