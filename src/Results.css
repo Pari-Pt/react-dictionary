@@ -1,3 +1,11 @@
 .Results p{
     margin-bottom: 20px;
 }
+
+.Results .card {
+    max-width: 700px;
+}
+
+.Results h2{
+    font-family: 'New Tegomin', serif;
+}

@@ -37,10 +37,12 @@ export default function DictionarySearch(props){
 if (loaded){
     return (
         <div className="DictionarySearch">
+            <section>
             <form onSubmit={handleSubmit}>
                 <input type="search" onChange={handleChanges} className="search-engine rounded" defaultValue={props.defaultKeyword} />
                 <input type="submit" className="search-submit-btn rounded ms-2" value="🔎Go!" />
             </form>
+            </section>
             <Results results={results}/>
             
         </div>);

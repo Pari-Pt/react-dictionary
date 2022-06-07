@@ -1,9 +1,13 @@
 .Meanings h3{
     color:rgb(111, 106, 106);
     margin-top: -7px;
+    font-family: 'New Tegomin', serif;
 }
 
+.Meanings .card {
+    max-width: 700px;
+}
 .Meanings ul {
-    max-width: 650px;
+    max-width: 660px;
 }
 
