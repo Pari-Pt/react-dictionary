@@ -7,33 +7,45 @@ export default function DictionarySearch(props){
     
     let [keyword, setKeyword] = useState(props.defaultKeyword);
     let [results, setResults] = useState(null);
+    let [loaded, setLoaded] = useState(false);
 
-    function handleResponse(response){
-        console.log(response);
-        setResults(response.data[0])
-    }
-    
-    
+
     function handleChanges(event){
-        setKeyword(event.target.value)
+        setKeyword(event.target.value);
     }
-    
-    
-    function search(event){
+
+    function handleSubmit(event){
         event.preventDefault();
+        search();
+    }
+
+    function search(){
         // API doc source: https://dictionaryapi.dev/
         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-        axios.get(apiUrl).then(handleResponse)
+        axios.get(apiUrl).then(handleResponse);
     }
 
+    function handleResponse(response){
+        setResults(response.data[0]);
+    }
+    
+    function load(){
+        setLoaded(true);
+        search();
+    }
 
+if (loaded){
     return (
         <div className="DictionarySearch">
-            <form onSubmit={search}>
-                <input type="search" onChange={handleChanges} className="search-engine rounded" placeholder="Search for a word..." />
+            <form onSubmit={handleSubmit}>
+                <input type="search" onChange={handleChanges} className="search-engine rounded" defaultValue={props.defaultKeyword} />
                 <input type="submit" className="search-submit-btn rounded ms-2" value="🔎Go!" />
             </form>
             <Results results={results}/>
             
         </div>);
+} else {
+    load();
+    return("Loading...");
+}
 }
