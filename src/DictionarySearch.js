@@ -3,9 +3,9 @@ import axios from "axios";
 import Results from "./Results.js";
 import "./DictionarySearch.css";
 
-export default function DictionarySearch(){
+export default function DictionarySearch(props){
     
-    let [keyword, setKeyword] = useState("");
+    let [keyword, setKeyword] = useState(props.defaultKeyword);
     let [results, setResults] = useState(null);
 
     function handleResponse(response){
