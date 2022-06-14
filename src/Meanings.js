@@ -3,9 +3,6 @@ import "./Meanings.css";
 import Synonyms from "./Synonyms.js";
 
 export default function Meanings(props){
-    
-console.log(props)
-console.log(props.meanings.synonyms)
     return (
     <div className="Meanings">
     <div className="card mt-3">
