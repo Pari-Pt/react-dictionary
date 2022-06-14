@@ -19,7 +19,17 @@ export default function Phonetics(props){
             </div>
         )
             } else {
+                if (props.phonetics[2].audio) {
+                    if (props.phonetics[2].audio) {
+                        return (
+                    <div className="Phonetics">
+                        <a href={props.phonetics[2].audio} className="me-4" target="_blank" rel="noreferrer" alt="Audio"><img src= {audioIcon} className="audio-icon" width="30px" alt="Audio Icon"/></a>
+                        <span>{props.phonetics[2].text}</span>
+                    </div>
+                )
+                } else {
             return null;
+            }}
         }
     }   
 }
