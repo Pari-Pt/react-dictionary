@@ -1,7 +1,8 @@
 .Meanings h3{
-    color:rgb(111, 106, 106);
+    color:black;
     margin-top: -7px;
-    font-family: 'New Tegomin', serif;
+    font-family: "New Tegomin", serif;
+    opacity: 0.6;
 }
 
 .Meanings .card {
