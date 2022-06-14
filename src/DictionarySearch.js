@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import axios from "axios";
+import Gallery from "./Gallery.js";
 import Results from "./Results.js";
 import "./DictionarySearch.css";
 
@@ -7,6 +8,7 @@ export default function DictionarySearch(props){
     
     let [keyword, setKeyword] = useState(props.defaultKeyword);
     let [results, setResults] = useState(null);
+    let [photos, setPhotos] = useState(null);
     let [loaded, setLoaded] = useState(false);
 
 
@@ -29,7 +31,7 @@ export default function DictionarySearch(props){
         axios.get(dictionaryUrl).then(handleDictionaryResponse);
 
         let pexelsApiKey = "563492ad6f917000010000014bc34b5fea2944e8904c9fa6cb1b8fc8";
-        let pexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=2`;
+        let pexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
         axios.
         get(pexelsUrl, {
             headers: {Authorization : `Bearer ${pexelsApiKey}`}
@@ -43,7 +45,7 @@ export default function DictionarySearch(props){
     }
 
     function handlePexelsResponse(response){
-        console.log(response)
+        setPhotos(response.data.photos);
     }
     
     function load(){
@@ -61,7 +63,14 @@ if (loaded){
             </form>
             <em>Suggestions: transformation, cheerful, impart, abundance</em>
             </section>
-            <Results results={results}/>
+            <div className="row">
+                <div className="col-9">
+                <Results results={results}/>
+                </div>
+                <div className="col-3">
+                <Gallery photos={photos} />
+                </div>
+            </div>
             
         </div>);
 } else {
