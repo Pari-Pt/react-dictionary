@@ -25,12 +25,25 @@ export default function DictionarySearch(props){
 
     function search(){
         // API doc source: https://dictionaryapi.dev/
-        let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-        axios.get(apiUrl).then(handleResponse);
+        let dictionaryUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+        axios.get(dictionaryUrl).then(handleDictionaryResponse);
+
+        let pexelsApiKey = "563492ad6f917000010000014bc34b5fea2944e8904c9fa6cb1b8fc8";
+        let pexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=2`;
+        axios.
+        get(pexelsUrl, {
+            headers: {Authorization : `Bearer ${pexelsApiKey}`}
+        })
+        .then(handlePexelsResponse);
+    }
+    
+
+    function handleDictionaryResponse(response){
+        setResults(response.data[0]);
     }
 
-    function handleResponse(response){
-        setResults(response.data[0]);
+    function handlePexelsResponse(response){
+        console.log(response)
     }
     
     function load(){
