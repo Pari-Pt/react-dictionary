@@ -1,3 +1,9 @@
+.Synonyms .btn{
+    transition: all 300ms ease-in-out;
+}
+
 .Synonyms .btn:hover {
-    cursor: default;
+    cursor: pointer;
+    background:#6BBBFF;
+    color: white;
 }
