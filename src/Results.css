@@ -9,3 +9,10 @@
 .Results h2{
     font-family: 'New Tegomin', serif;
 }
+
+.EmptyResults {
+    background: transparent;
+    margin: auto 10px;
+    width: auto;
+    height: 2000px;
+}

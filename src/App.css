@@ -1,7 +1,8 @@
 .App{
-    background: #bed8f8;
+    background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
     padding-top: 60px;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
+
 }
 
 .App h1, footer{

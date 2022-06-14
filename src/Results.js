@@ -31,6 +31,6 @@ export default function Results(props){
         </div>
     );
     } else {
-        return null;
+        return <div className="EmptyResults"></div>;
     }
 }

@@ -42,6 +42,7 @@ if (loaded){
                 <input type="search" onChange={handleChanges} className="search-engine rounded" defaultValue={props.defaultKeyword} />
                 <input type="submit" className="search-submit-btn rounded ms-2" value="🔎Go!" />
             </form>
+            <em>Suggestions: kingdom, abundance, navigate, eloquent</em>
             </section>
             <Results results={results}/>
             
