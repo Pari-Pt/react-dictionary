@@ -16,7 +16,11 @@ export default function DictionarySearch(props){
 
     function handleSubmit(event){
         event.preventDefault();
-        search();
+        if (keyword) {
+            search();
+        } else {
+            alert("Please submit a word")
+        }
     }
 
     function search(){
