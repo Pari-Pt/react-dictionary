@@ -13,7 +13,7 @@ export default function Phonetics(props){
         } else {
             if (props.phonetics[1].audio) {
                 return (
-            <div className="Test">
+            <div className="Phonetics">
                 <a href={props.phonetics[1].audio} className="me-4" target="_blank" rel="noreferrer" alt="Audio"><img src= {audioIcon} className="audio-icon" width="30px" alt="Audio Icon"/></a>
                 <span>{props.phonetics[1].text}</span>
             </div>
