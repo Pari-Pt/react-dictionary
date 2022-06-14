@@ -7,7 +7,7 @@ export default function App() {
       <h1>Dictionary App</h1>
       <DictionarySearch defaultKeyword="laugh" />
       <footer>
-      <small><a href="https://github.com/Seo-Pt/react-dictionary">Open-source code</a> by Seonah Nathali</small>
+      <div>This <a href="https://github.com/Seo-Pt/react-dictionary" target="_blank" rel="noopener">open-sourced</a> Dictionary was coded by <a href="https://confident-elion-25e30f.netlify.app/index.html" target="_blank" rel="noopener">Seonah Nathali</a></div>
       </footer>
     </div>
   );

@@ -1,7 +1,7 @@
 .App{
     background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
     padding-top: 60px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     min-height: 100vh;
 }
 
@@ -13,4 +13,8 @@
     margin-bottom: 50px;
     font-family: 'New Tegomin', serif;
     font-weight: 600;
+}
+
+.App footer {
+    margin-top: 20px;
 }
