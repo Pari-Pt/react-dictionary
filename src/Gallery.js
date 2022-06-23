@@ -1,12 +1,10 @@
 import React from "react";
 import "./Gallery.css";
 
-export default function Gallery(props){
-    console.log(props)
-    
-    if (props.photos.length > 0) {
-
-        return(
+export default function Gallery(props){    
+    if (props.photos) {
+        if (props.photos.length > 0) {
+            return(
             <div className="Gallery">
                 <div className="card mt-3">
                     <div className="card-body">
@@ -24,16 +22,16 @@ export default function Gallery(props){
                 </div>
            </div>
         );
-        
-    } else {
-        return (
-            <div className="LAH">
-                <div className="card mt-3">
-                    <div className="card-body">
-                    <div>No images available</div>
+        } else {
+            return (
+                <div className="LAH">
+                    <div className="card mt-3">
+                        <div className="card-body">
+                        <div>No images available</div>
+                    </div>
                 </div>
-            </div>
-            </div>
-        )
-    }
-}
+                </div>
+            )
+        }
+
+    }}
