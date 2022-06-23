@@ -11,7 +11,7 @@
     text-align: center;
 }
 
-.App .main-heading{
+.App .MainHeading{
     font-family: 'New Tegomin', serif;
     font-weight: 600;
     font-size: 50px;
@@ -19,13 +19,13 @@
 }
 
 
-.App .book-icon{
+.App .BookIcon{
     display: inline-block;
     margin: 0px 25px 0px 25px;
     position:relative;
 }
 
-.book-icon-left{
+.BookIconLeft{
     transform: scaleX(-1);
 }
 .App footer {
@@ -33,20 +33,20 @@
 }
 
 
-@media screen and (max-width:998px){
-.App .book-icon{
+@media(max-width:998px){
+.App .BookIcon{
     width: 150px;
 }
     }
 
     @media(max-width:800px){
-        .App .book-icon{
+        .App .BookIcon{
             display:none;
         }
             }
         
             @media(max-width:414px){
-                .App .main-heading {
+                .App .MainHeading {
                     font-size: 40px;
                 }
                     }

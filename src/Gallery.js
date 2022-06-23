@@ -9,10 +9,10 @@ export default function Gallery(props){
             <div className="Gallery">
                 <div className="card mt-3">
                     <div className="card-body">
-                        <div className="row border">
+                        <div className="row">
                             {props.photos.map(function(photo, index) {
                                 return(
-                                    <div className="col-md-4 border" key={index}>
+                                    <div className="col-md-4" key={index}>
                                         <a href={photo.src.original} target="_blank" rel="noopener noreferrer"><img src={photo.src.medium} className="img-fluid" alt={photo.alt} title={photo.alt} /></a>
                                          </div>
                                     );
