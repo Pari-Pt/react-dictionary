@@ -2,7 +2,6 @@ import React from "react";
 import audioIcon from "./images/audio-icon.svg";
 
 export default function Phonetics(props){
-    console.log(props)
     if (props.phonetics.length > 0) {
     if (props.phonetics[0].audio){
         return (

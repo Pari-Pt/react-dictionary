@@ -58,7 +58,7 @@ if (loaded){
                 <input type="search" onChange={handleChanges} className="SearchEngine rounded" defaultValue={props.defaultKeyword} />
                 <input type="submit" className="SearchSubmitBtn rounded ms-2" value="🔎Go!" />
             </form>
-            <div className="SearchSuggestions"><em>Suggestions: cheerful, wonder, abundance</em></div>
+            <div className="Suggestions"><em>Suggestions: cheerful, wonder, abundance</em></div>
             </section>
                 <Results results={results}/>
                 <Gallery photos={photos} />

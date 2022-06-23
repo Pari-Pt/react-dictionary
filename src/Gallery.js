@@ -3,7 +3,8 @@ import "./Gallery.css";
 
 export default function Gallery(props){
     console.log(props)
-    if (props.photos) {
+    
+    if (props.photos.length > 0) {
 
         return(
             <div className="Gallery">
@@ -26,14 +27,13 @@ export default function Gallery(props){
         
     } else {
         return (
-            <div className="Gallery">
+            <div className="LAH">
                 <div className="card mt-3">
                     <div className="card-body">
-                    <div><em>No images available</em></div>
+                    <div>No images available</div>
                 </div>
             </div>
             </div>
-        );
-    
+        )
     }
 }
