@@ -12,8 +12,8 @@ export default function Gallery(props){
                         <div className="row border">
                             {props.photos.map(function(photo, index) {
                                 return(
-                                    <div className="col-md-3 border" key={index}>
-                                        <a href={photo.src.original} target="_blank" rel="noopener noreferrer"><img src={photo.src.small} className="img-fluid" alt={photo.alt} title={photo.alt} /></a>
+                                    <div className="col-md-4 border" key={index}>
+                                        <a href={photo.src.original} target="_blank" rel="noopener noreferrer"><img src={photo.src.medium} className="img-fluid" alt={photo.alt} title={photo.alt} /></a>
                                          </div>
                                     );
                                 })}

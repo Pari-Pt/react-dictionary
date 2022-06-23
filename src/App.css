@@ -11,7 +11,7 @@
     text-align: center;
 }
 
-.App .image-heading{
+.App .main-heading{
     font-family: 'New Tegomin', serif;
     font-weight: 600;
     font-size: 50px;
@@ -39,9 +39,15 @@
 }
     }
 
-    @media screen and (max-width:800px){
+    @media(max-width:800px){
         .App .book-icon{
             display:none;
         }
             }
         
+            @media(max-width:414px){
+                .App .main-heading {
+                    font-size: 40px;
+                }
+                    }
+                
