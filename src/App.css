@@ -16,26 +16,29 @@
     text-align: center;
 }
 
+.App .Title{
+    padding-left:15px;
+    padding-right:15px;
+}
+
 .App .MainHeading {
     text-transform: uppercase;
     color:black;
     font-family: 'New Tegomin', serif;
     font-size: 50px;
-    line-height: 60px;
+    line-height: 55px;
     letter-spacing: 5px;
-    animation: swing 5s ease-in-out infinite alternate;
+    animation: swing ease-in-out 1s infinite alternate;
   }
   
   @keyframes swing {
     from {
-      transform: rotate(5deg);
+      transform: rotate(1deg);
     }
     to {
-      transform: rotate(-5deg);
+      transform: rotate(-1deg);
     }
   }
-
-
 
 
 
@@ -59,15 +62,22 @@
 }
     }
 
-    @media(max-width:800px){
+    @media(max-width:900px){
         .App .BookIcon{
             display:none;
+        }
+        .App{
+            padding-top: 30px;
+        }
+        .App .MainHeading{
+            margin-bottom: 10px;
         }
             }
         
             @media(max-width:414px){
                 .App .Title {
                     font-size: 40px;
+                    line-height: 45px;
                 }
                     }
                 

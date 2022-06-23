@@ -7,3 +7,9 @@
     background:#6BBBFF;
     color: white;
 }
+
+@media(max-width:767px){
+    .Synonyms .CopySuggestion{
+        color:blue;
+    }
+}
