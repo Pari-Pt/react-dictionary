@@ -31,7 +31,7 @@ export default function DictionarySearch(props){
         axios.get(dictionaryUrl).then(handleDictionaryResponse);
 
         let pexelsApiKey = "563492ad6f917000010000014bc34b5fea2944e8904c9fa6cb1b8fc8";
-        let pexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
+        let pexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=8&orientation=landscape`;
         axios.get(pexelsUrl, {
             headers: {Authorization : `Bearer ${pexelsApiKey}`}}).then(handlePexelsResponse);
     }
@@ -58,17 +58,10 @@ if (loaded){
                 <input type="search" onChange={handleChanges} className="search-engine rounded" defaultValue={props.defaultKeyword} />
                 <input type="submit" className="search-submit-btn rounded ms-2" value="🔎Go!" />
             </form>
-            <em>Suggestions: cheerful, impart, abundance</em>
+            <div className="search-suggestions"><em>Suggestions: cheerful, wonder, abundance</em></div>
             </section>
-            <div className="row">
-                <div className="col-9">
                 <Results results={results}/>
-                </div>
-                <div className="col-3">
                 <Gallery photos={photos} />
-                </div>
-            </div>
-            
         </div>);
 } else {
     load();
