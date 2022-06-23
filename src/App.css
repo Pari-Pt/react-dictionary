@@ -11,12 +11,32 @@
     text-align: center;
 }
 
-.App .MainHeading{
-    font-family: 'New Tegomin', serif;
+.App .Title, .MainHeading{
     font-weight: 600;
-    font-size: 50px;
     text-align: center;
 }
+
+.App .MainHeading {
+    text-transform: uppercase;
+    color:black;
+    font-family: 'New Tegomin', serif;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 5px;
+    animation: swing 5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes swing {
+    from {
+      transform: rotate(5deg);
+    }
+    to {
+      transform: rotate(-5deg);
+    }
+  }
+
+
+
 
 
 .App .BookIcon{
@@ -46,7 +66,7 @@
             }
         
             @media(max-width:414px){
-                .App .MainHeading {
+                .App .Title {
                     font-size: 40px;
                 }
                     }
