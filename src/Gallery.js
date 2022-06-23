@@ -31,7 +31,7 @@ export default function Gallery(props){
             <div className="Gallery">
                 <div className="card mt-3">
                     <div className="card-body">
-                    <div>No images available</div>
+                    <div><em>No images available</em></div>
                 </div>
             </div>
             </div>

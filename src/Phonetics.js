@@ -2,6 +2,8 @@ import React from "react";
 import audioIcon from "./images/audio-icon.svg";
 
 export default function Phonetics(props){
+    console.log(props)
+    if (props.phonetics.length > 0) {
     if (props.phonetics[0].audio){
         return (
         <div className="Phonetics">
@@ -26,9 +28,14 @@ export default function Phonetics(props){
                         <span>{props.phonetics[2].text}</span>
                     </div>
                 )
-                } else {
-            return null;
+                } 
+            } else {
+           return null
             }}
         }
-    }   
+    } else {
+        return (
+            <div className="Phonetics"><em>Phonetics not available</em></div>
+        )
+    }  
 }
