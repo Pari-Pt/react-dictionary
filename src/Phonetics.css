@@ -1,0 +1,14 @@
+
+.Phonetics audio{
+    display: inline;
+    vertical-align: middle;
+    float: right;
+}
+
+.Phonetics .phonetics-text {
+    font-family: 'New Tegomin', serif;
+    vertical-align: middle;
+    font-size: 25px;
+    margin-top: 15px;
+ 
+}

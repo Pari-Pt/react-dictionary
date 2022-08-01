@@ -12,8 +12,7 @@ export default function Results(props){
             <div className="card mt-3">
             <div className="card-body">
             <h2>📖{word}</h2>
-            <span><Phonetics phonetics={props.results.phonetics} /></span>
-
+            <Phonetics phonetics={props.results.phonetics} />
 
             </div>
             </div>
