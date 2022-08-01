@@ -55,10 +55,11 @@ if (loaded){
         <div className="DictionarySearch">
             <section>
             <form onSubmit={handleSubmit}>
-                <input type="search" onChange={handleChanges} className="SearchEngine rounded" defaultValue={props.defaultKeyword} />
+                <input type="search" onChange={handleChanges} className="SearchEngine rounded" autofocus defaultValue={props.defaultKeyword} />
                 <input type="submit" className="SearchSubmitBtn rounded ms-2" value="🔎Go!" />
+                <div className="SearchSuggestions">Suggestions: cheerful, wonder, abundance</div>
+
             </form>
-            <div className="SearchSuggestions"><em>Suggestions: cheerful, wonder, abundance</em></div>
             </section>
                 <Results results={results}/>
                 <Gallery photos={photos} />
