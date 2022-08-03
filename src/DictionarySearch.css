@@ -8,6 +8,9 @@
     margin: 0 auto;
     font-family: 'New Tegomin', serif;
     width: 75%;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
 }
 
 .DictionarySearch input {
