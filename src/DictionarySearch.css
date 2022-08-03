@@ -36,7 +36,7 @@
     -moz-appearance:    none;
     appearance:         none;
     background-color: rgb(185, 183, 183);
-    width: 80px;
+    width: fit-content;
     font-size: 28px;
     line-height: 30px;
 }
