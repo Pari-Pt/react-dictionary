@@ -42,8 +42,11 @@
 
 @media(max-width:768px){
 
+    .DictionarySearch form {
+        width: 80%;
+    }
+
     .DictionarySearch input {
-        width: 100%;
         line-height: 25px;
         font-size: 20px;
     }
@@ -51,7 +54,7 @@
     .DictionarySearch .SearchSubmitBtn {
         line-height: 25px;
         font-size: 20px;
-        height: 31px;
+        height: 32px;
         text-align: center;
     }
 }
