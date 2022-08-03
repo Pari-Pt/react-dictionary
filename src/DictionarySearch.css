@@ -11,8 +11,8 @@
 }
 
 .DictionarySearch input {
-    line-height: 27px;
-    font-size: 22px;
+    line-height: 30px;
+    font-size: 28px;
     display: inline;
     -webkit-appearance: none;
     -moz-appearance:    none;
@@ -36,14 +36,24 @@
     -moz-appearance:    none;
     appearance:         none;
     background-color: rgb(185, 183, 183);
+    width: 80px;
+    font-size: 28px;
+    line-height: 30px;
 }
 
 @media(max-width:768px){
 
-    .DictionarySearch form {
+    .DictionarySearch input {
         width: 100%;
-        line-height: 30px;
-        font-size: 28px;
+        line-height: 25px;
+        font-size: 20px;
+    }
+    
+    .DictionarySearch .SearchSubmitBtn {
+        line-height: 25px;
+        font-size: 20px;
     }
 }
+
+
 
