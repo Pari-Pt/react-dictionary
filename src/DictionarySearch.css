@@ -24,5 +24,8 @@
 
 .DictionarySearch .SearchSuggestions{
     margin-right: 0 auto;
-    
+}
+
+.DictionarySearch .SearchSubmitBtn {
+    -webkit-appearance: none;
 }
