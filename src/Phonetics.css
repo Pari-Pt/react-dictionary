@@ -17,7 +17,6 @@
 @media(max-width:768px){
 
     .Phonetics audio {
-        width: 40%;
-        float: right;
+        width: 50%;
     }
 }

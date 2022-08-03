@@ -52,6 +52,8 @@
     .DictionarySearch .SearchSubmitBtn {
         line-height: 25px;
         font-size: 20px;
+        height: 31px;
+        text-align: center;
     }
 }
 
