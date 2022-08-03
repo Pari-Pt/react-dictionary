@@ -42,31 +42,21 @@
   }
 
 
-
-.App .BookIcon{
-    display: inline-block;
-    margin: 0px 25px 0px 25px;
-    position:relative;
-}
-
-.BookIconLeft{
-    transform: scaleX(-1);
-}
 .App footer {
     margin-top: 20px;
 }
 
 
-@media(max-width:998px){
-.App .BookIcon{
-    width: 150px;
+@media(min-width:997px){
+
+
+.App .MainHeading {
+    margin-bottom: 50px;
 }
     }
 
     @media(max-width:935px){
-        .App .BookIcon{
-            display:none;
-        }
+        
         .App{
             padding-top: 30px;
         }
