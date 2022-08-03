@@ -1,6 +1,5 @@
 import './App.css';
 import DictionarySearch from "./DictionarySearch.js";
-import bookIcon from "./images/book-girl-icon.svg";
 
 export default function App() {
   return (
