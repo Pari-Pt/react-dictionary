@@ -18,5 +18,6 @@
 
     .Phonetics audio {
         width: 40%;
+        float: right;
     }
 }
