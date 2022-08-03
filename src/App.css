@@ -5,7 +5,11 @@
     min-height: 100vh;
     padding-left: 20px;
     padding-right:20px;
+    width: 100%;
     min-width: 600px;
+    max-width: 100%;
+    overflow-x: hidden;
+    
 }
 
 .App footer{
@@ -32,15 +36,6 @@
     animation: swing ease-in-out 1s infinite alternate;
   }
   
-  @keyframes swing {
-    from {
-      transform: rotate(1deg);
-    }
-    to {
-      transform: rotate(-1deg);
-    }
-  }
-
 
 .App footer {
     margin-top: 20px;
