@@ -3,6 +3,7 @@
     display: inline;
     vertical-align: middle;
     float: right;
+    width: 400px;
 }
 
 .Phonetics .phonetics-text {
@@ -11,4 +12,11 @@
     font-size: 25px;
     margin-top: 15px;
  
+}
+
+@media(max-width:768px){
+
+    .Phonetics audio {
+        width: 40%;
+    }
 }

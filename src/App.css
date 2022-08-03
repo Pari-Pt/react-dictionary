@@ -1,6 +1,6 @@
 .App{
     background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 10px;
     min-height: 100vh;
     padding-left: 20px;
@@ -40,28 +40,23 @@
 }
 
 
-@media(min-width:997px){
+@media(max-width:997px){
 
-
-.App .MainHeading {
-    margin-bottom: 50px;
-}
+    .App {
+    padding-top: 30px;
     }
 
-    @media(max-width:935px){
+    .App .MainHeading {
+    margin-bottom: 50px;
+    }
+}
+
         
-        .App{
-            padding-top: 30px;
-        }
-        .App .MainHeading{
-            margin-bottom: 10px;
-        }
-            }
-        
-            @media(max-width:414px){
-                .App .Title {
-                    font-size: 40px;
-                    line-height: 45px;
-                }
-                    }
+@media(max-width:414px){
+
+    .App .MainHeading {
+        font-size: 40px;
+        line-height: 45px;
+    }
+}
                 
