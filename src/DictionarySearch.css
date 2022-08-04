@@ -22,7 +22,7 @@
 
 .DictionarySearch .SearchEngine {
     box-shadow: 0px 5px 15px rgba(105, 95, 95, 0.2);
-    width: 67%;
+    width: 70%;
 }
 
 .DictionarySearch .SearchSuggestions{
@@ -49,6 +49,10 @@
     .DictionarySearch input {
         line-height: 25px;
         font-size: 20px;
+    }
+
+    .DictionarySearch .SearchEngine {
+        width: 90%;
     }
     
     .DictionarySearch .SearchSubmitBtn {
