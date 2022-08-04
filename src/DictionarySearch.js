@@ -28,7 +28,21 @@ export default function DictionarySearch(props){
     function search(){
         // API doc source: https://dictionaryapi.dev/
         let dictionaryUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-        axios.get(dictionaryUrl).then(handleDictionaryResponse);
+        axios.get(dictionaryUrl).then(handleDictionaryResponse)
+        .catch(err => {
+            if (err.response) {
+                if (err.response) {
+                    alert("Sorry! 😥 Something went wrong and we couldn't find this word, please try another.");
+                    // client received an error response (5xx, 4xx)
+                  } else if (err.request) {
+                    alert("Sorry! 😥 Something went wrong and we couldn't find this word, please try another.");
+                    // client never received a response, or request never left
+                  } else {
+                    alert("Sorry! 😥 Something went wrong and we couldn't find this word, please try another.");
+                    // anything else
+                  }
+            }});
+
 
         let pexelsApiKey = "563492ad6f917000010000014bc34b5fea2944e8904c9fa6cb1b8fc8";
         let pexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9&orientation=landscape`;
@@ -38,6 +52,7 @@ export default function DictionarySearch(props){
     
 
     function handleDictionaryResponse(response){
+        console.log(response);
         setResults(response.data[0]);
     }
 
