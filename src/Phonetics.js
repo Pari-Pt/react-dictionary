@@ -3,7 +3,7 @@ import "./Phonetics.css";
 import audioIcon from "./images/audio-icon.svg";
 
 export default function Phonetics(props){
-    if (props.phonetics){
+    if (props.phonetics.length){
     if (props.phonetics[0].audio){
         return (
 
@@ -31,12 +31,12 @@ export default function Phonetics(props){
                     </span>
                 )
             } else {
-                <div className="Phonetics"><em>Phonetics not available</em></div>
+                <span className="Phonetics"><em>Phonetics not available</em></span>
             }}
         }
     } else {
         return (
-            <div className="Phonetics"><em>Phonetics not available</em></div>
+            <span className="Phonetics"><em>Phonetics not available</em></span>
         )
     }  
 }

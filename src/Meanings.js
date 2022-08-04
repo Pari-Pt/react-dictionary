@@ -3,8 +3,10 @@ import "./Meanings.css";
 import Synonyms from "./Synonyms.js";
 
 export default function Meanings(props){
-    return (
-    <div className="Meanings">
+    if (props.length) {
+
+        return (
+            <div className="Meanings">
     <div className="card mt-3">
     <div className="card-body">
     
@@ -25,4 +27,8 @@ export default function Meanings(props){
     </div>
     </div>
     );
+} else {
+    <div className="Meanings"><em>Meanings not available</em></div>
+
+}
 }

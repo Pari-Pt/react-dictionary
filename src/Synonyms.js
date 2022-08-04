@@ -21,6 +21,7 @@ export default function Synonyms(props){
                     </div>
         );
                 } else {
-                    return null;
+                    return <div className="Synonyms"><em>Synonyms not available</em></div>
+                    ;
                 }
     }
