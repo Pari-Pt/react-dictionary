@@ -31,12 +31,12 @@ export default function Phonetics(props){
                     </span>
                 )
             } else {
-                <span className="Phonetics"><em>Phonetics not available</em></span>
+                <div className="Phonetics"><em>Phonetics not available</em></div>
             }}
         }
     } else {
         return (
-            <span className="Phonetics"><em>Phonetics not available</em></span>
+            <div className="Phonetics"><em>Phonetics not available</em></div>
         )
     }  
 }
