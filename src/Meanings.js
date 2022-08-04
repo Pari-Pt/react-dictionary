@@ -3,15 +3,13 @@ import "./Meanings.css";
 import Synonyms from "./Synonyms.js";
 
 export default function Meanings(props){
-    if (props.length) {
-
+    if (props.meanings) {
         return (
             <div className="Meanings">
-    <div className="card mt-3">
-    <div className="card-body">
-    
-    <h3>[{props.meanings.partOfSpeech}]</h3>
-    <h6>Definition(s):</h6>
+                <div className="card mt-3">
+                    <div className="card-body">
+                    <h3>[{props.meanings.partOfSpeech}]</h3>
+                    <h6>Definition(s):</h6>
     
     {props.meanings.definitions.map(function(definition, index){
         return(
@@ -22,13 +20,26 @@ export default function Meanings(props){
                     </div>
             );
         })}
+
         <Synonyms synonyms={props.meanings.synonyms} />
+
     </div>
     </div>
     </div>
     );
-} else {
-    <div className="Meanings"><em>Meanings not available</em></div>
+    } else {
+        return (
+            <div className="Meanings">
+                <div className="card mt-3">
+                    <div className="card-body">
+                    <h3>[{props.meanings.partOfSpeech}]</h3>
+                    <h6>Definition(s):</h6>
+                    <div><em>Synonyms not available</em></div>
+                    </div>
+                </div>
+            </div>   
 
-}
-}
+
+        )
+    }  
+    }
