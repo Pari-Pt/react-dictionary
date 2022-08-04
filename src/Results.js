@@ -4,7 +4,6 @@ import Phonetics from "./Phonetics.js";
 import "./Results.css";
 
 export default function Results(props){
-    console.log(props);
     if (props.results) {
         let word = props.results.word;
     return(
